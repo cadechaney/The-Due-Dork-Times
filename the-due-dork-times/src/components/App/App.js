@@ -1,6 +1,9 @@
 import React, { Component } from 'react'
 import './App.css';
 import Header from './Header/Header'
+import ArticlesList from './ArticlesList/ArticlesList'
+
+
 import MockData from '../../MockData/mockData.json'
 
 class App extends Component {
@@ -17,6 +20,7 @@ class App extends Component {
     return (
       <>
         <Header />
+        <ArticlesList />
       </>
     );
   }
