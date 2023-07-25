@@ -3,7 +3,9 @@ import './Header.css'
 
 function Header() {
   return(
-    <p>Header</p>
+    <div className='header-title'>
+      <h1>The Due Dork Times: Smart News for All</h1>
+    </div>
   )
 }
 
