@@ -11,8 +11,7 @@ function Header() {
       </section>
       <section className='header-title'>
         <h1>The Due Dork Times: Smart News for All</h1>
-      </section>
-
+      </section> 
     </header>
   )
 }
