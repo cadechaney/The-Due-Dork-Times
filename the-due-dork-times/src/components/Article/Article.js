@@ -1,9 +1,9 @@
 import React from 'react'
 import './Article.css'
 
-function Article() {
+function Article({ author }) {
   return(
-    <p>This is an article</p>
+    <p>Author: {author}</p>
   )
 }
 
