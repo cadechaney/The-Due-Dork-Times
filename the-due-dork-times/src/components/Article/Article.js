@@ -3,14 +3,14 @@ import './Article.css'
 
 function Article({ date, headline, description, image }) {
 
-
-
+  const newDate = date.split('T')
+  
   return(
     <>
-      <p>date: {date} </p>
+      <p>date: {newDate[0]} </p>
       <p>Title: {headline}</p>
       <p>description {description}</p>
-      <img src={image}></img>
+      {/* <img src={image}></img> */}
     </>
   )
 }
