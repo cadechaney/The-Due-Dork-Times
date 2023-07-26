@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { Route, Routes } from 'react-router-dom'
 import './App.css';
 import ArticlesList from './ArticlesList/ArticlesList'
+import ArticleDetails from '../ArticleDetails/ArticleDetails';
 
 import MockData from '../../MockData/mockData.json'
 
@@ -19,7 +20,7 @@ class App extends Component {
       <>
         <Routes>
           <Route path='/' element={<ArticlesList articles={this.state.articles} />}/>
-
+          <Route path='/id' element={<ArticleDetails />} />
         </Routes>
       </>
     );
