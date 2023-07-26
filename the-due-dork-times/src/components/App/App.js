@@ -28,7 +28,7 @@ class App extends Component {
     return (
       <>
         <Routes>
-          <Route path='/article/:id' element={<ArticleDetails />} />
+          <Route path='/article/:id' element={<ArticleDetails details={this.state.singleArticle} />} />
           <Route path='/' element={<ArticlesList articles={this.state.articles} viewArticle={this.viewArticle} />}/>
         </Routes>
       </>

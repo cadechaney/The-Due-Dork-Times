@@ -7,7 +7,7 @@ function Article({ id, date, headline, description, image, viewArticle }) {
   const newDate = date.split('T')
   
   return(
-    <NavLink to={`/articles/${id}`} className='article-link'>
+    <NavLink to={`/article/${id}`} className='article-link'>
       <div className='article-container' id={id} onClick={() => viewArticle(id)}>
         <section className='article-details'>
           <p>{newDate[0]} </p>
