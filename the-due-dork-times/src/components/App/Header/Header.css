@@ -1,6 +1,6 @@
 
 header {
-  border: 2px solid red;
+  border-bottom: 2px solid gray;
   height: 15vh;
 }
 
@@ -12,6 +12,7 @@ header {
   display: flex;
   justify-content: center;
   font-size: x-large;
+  font-family: Georgia, serif;
 }
 
 .search-section {
