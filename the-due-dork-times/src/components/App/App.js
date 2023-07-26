@@ -12,7 +12,8 @@ class App extends Component {
     super(props)
     this.state = {
       articles: MockData.articles,
-      singleArticle: {}
+      singleArticle: {},
+      searchResult: []
     }
   }
 
@@ -21,7 +22,21 @@ class App extends Component {
     this.setState({ singleArticle: findArticle }, () => {
       console.log(this.state.singleArticle)
     })
-    
+  }
+
+  viewSearchArticle = (id) => {
+    const findArticle = this.state.searchResult.find((article, index) => index + 1 === id)
+    this.setState({ singleArticle: findArticle }, () => {
+      console.log(this.state.singleArticle)
+    })
+  }
+
+  searchResult = (searchResult) => {
+    let lowerCaseValue = searchResult.toLowerCase()
+    let searchArticleResult = this.state.articles.filter((article) => article.author.toLowerCase().includes(lowerCaseValue) || article.title.toLowerCase().includes(lowerCaseValue))
+    this.setState({ searchResult: searchArticleResult}, () => {
+      console.log(this.state.searchResult)
+    })
   }
 
   render() {
@@ -29,7 +44,15 @@ class App extends Component {
       <>
         <Routes>
           <Route path='/article/:id' element={<ArticleDetails details={this.state.singleArticle} />} />
-          <Route path='/' element={<ArticlesList articles={this.state.articles} viewArticle={this.viewArticle} />}/>
+          <Route 
+            path='/' 
+            element={<ArticlesList 
+            articles={this.state.articles} 
+            viewArticle={this.viewArticle} 
+            searchResult={this.searchResult}
+            searchResultState={this.state.searchResult}
+            viewSearchArticle={this.viewSearchArticle}
+          />}/>
         </Routes>
       </>
     );

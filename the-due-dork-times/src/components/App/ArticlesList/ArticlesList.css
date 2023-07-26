@@ -8,3 +8,9 @@
 .articles-list-container {
   width: 50%;
 }
+
+.searched-articles-container {
+  height: 30%;
+  width: 30%;
+}
+

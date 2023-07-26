@@ -1,0 +1,25 @@
+.search-article-link {
+  text-decoration: none;
+  color: black;
+}
+
+.search-article-container {
+  border-bottom: solid 2px gray;;
+  display: flex;
+  margin-top: 5%;
+  margin-left: 5%;
+}
+
+.search-article-details {
+  height: 100%;
+}
+
+.search-article-description {
+  border-top: solid 1px gray;
+}
+
+.search-article-image {
+  height: 100%;
+  width: 30%;
+  margin-bottom: 4%;
+}
