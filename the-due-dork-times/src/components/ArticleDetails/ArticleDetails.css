@@ -53,8 +53,23 @@
 }
 
 .article-description-long {
-  /* height: 65%; */
   width: 80%;
   border-top: 2px solid gray;
   margin-top: 2%;
+}
+
+@media screen and (max-width: 460px) {
+  .details-box-container {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 365px) {
+  .article-details-image {
+    height: 50%;
+  }
+
+  .article-extra-details {
+    height: 35%;
+  }
 }
