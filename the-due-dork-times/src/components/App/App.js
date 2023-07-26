@@ -15,12 +15,17 @@ class App extends Component {
     }
   }
 
+  viewArticle = (id) => {
+    const findArticle = this.state.articles.find((article, index) => index + 1 === id)
+    console.log(findArticle)
+  }
+
   render() {
     return (
       <>
         <Routes>
-          <Route path='/' element={<ArticlesList articles={this.state.articles} />}/>
-          <Route path='/id' element={<ArticleDetails />} />
+          <Route path='/:id' element={<ArticleDetails />} />
+          <Route path='/' element={<ArticlesList articles={this.state.articles} viewArticle={this.viewArticle} />}/>
         </Routes>
       </>
     );
