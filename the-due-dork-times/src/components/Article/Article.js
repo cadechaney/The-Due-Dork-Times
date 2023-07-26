@@ -1,9 +1,17 @@
 import React from 'react'
 import './Article.css'
 
-function Article({ author }) {
+function Article({ date, headline, description, image }) {
+
+
+
   return(
-    <p>Author: {author}</p>
+    <>
+      <p>date: {date} </p>
+      <p>Title: {headline}</p>
+      <p>description {description}</p>
+      <img src={image}></img>
+    </>
   )
 }
 
