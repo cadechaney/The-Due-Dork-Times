@@ -28,3 +28,15 @@ header {
 .search-box {
   height: 25%;
 }
+
+@media screen and (max-width: 670px) {
+  .header-title {
+    font-size: medium;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .header-title {
+    font-size: small;
+  }
+}
