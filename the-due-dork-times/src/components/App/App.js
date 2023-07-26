@@ -11,13 +11,17 @@ class App extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      articles: MockData.articles
+      articles: MockData.articles,
+      singleArticle: {}
     }
   }
 
   viewArticle = (id) => {
     const findArticle = this.state.articles.find((article, index) => index + 1 === id)
-    console.log(findArticle)
+    this.setState({ singleArticle: findArticle }, () => {
+      console.log(this.state.singleArticle)
+    })
+    
   }
 
   render() {
