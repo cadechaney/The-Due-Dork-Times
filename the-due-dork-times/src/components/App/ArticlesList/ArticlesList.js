@@ -1,6 +1,8 @@
 import React from 'react'
 import './ArticlesList.css'
+import Header from '../Header/Header'
 import Article from '../../Article/Article'
+
 
 function ArticlesList({ articles }) {
 
@@ -11,11 +13,14 @@ function ArticlesList({ articles }) {
   ))
 
   return(
-    <section className='true-articles-container'>
-      <div className='articles-list-container'>
-        {articlesList}
-      </div>
-    </section>
+    <>
+      <Header />
+      <section className='true-articles-container'>
+        <div className='articles-list-container'>
+          {articlesList}
+        </div>
+      </section>
+    </>
    
   )
 }

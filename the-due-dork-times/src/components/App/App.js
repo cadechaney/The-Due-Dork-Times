@@ -1,8 +1,7 @@
 import React, { Component } from 'react'
+import { Route, Routes } from 'react-router-dom'
 import './App.css';
-import Header from './Header/Header'
 import ArticlesList from './ArticlesList/ArticlesList'
-
 
 import MockData from '../../MockData/mockData.json'
 
@@ -18,8 +17,10 @@ class App extends Component {
   render() {
     return (
       <>
-        <Header />
-        <ArticlesList articles={this.state.articles} />
+        <Routes>
+          <Route path='/' element={<ArticlesList articles={this.state.articles} />}/>
+
+        </Routes>
       </>
     );
   }
