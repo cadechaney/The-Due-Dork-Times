@@ -3,6 +3,7 @@ import { Route, Routes } from 'react-router-dom'
 import './App.css';
 import ArticlesList from './ArticlesList/ArticlesList'
 import ArticleDetails from '../ArticleDetails/ArticleDetails';
+import MilkMovie from '../../assets/milkMovieAd.gif'
 // import apiCall from '../../apiCalls/apiCalls';
 
 import MockData from '../../MockData/mockData.json'
@@ -14,7 +15,8 @@ class App extends Component {
     this.state = {
       articles: MockData.articles,
       singleArticle: {},
-      searchResult: []
+      searchResult: [],
+      err: ''
     }
   }
 
@@ -25,9 +27,7 @@ class App extends Component {
   //         articles: data.articles
   //       })
   //     })
-  //     .catch(error => {
-  //       console.log('error', error)
-  //     })
+  //     .catch(() => {this.setState({err: 'Refresh Page'})})
   // }
 
   viewArticle = (id) => {
@@ -53,8 +53,16 @@ class App extends Component {
   }
 
   render() {
+    if(this.state.err === 'Refresh Page') {
+      return (<h1>{this.state.err}</h1>)
+    }
+
     return (
       <>
+      <div className='advertisement'>
+        <p>advertisement</p>
+        <img src={MilkMovie} className='milk-ad'></img>
+      </div>
         <Routes>
           <Route path='/article/:id' element={<ArticleDetails details={this.state.singleArticle} />} />
           <Route 

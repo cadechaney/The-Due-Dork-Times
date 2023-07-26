@@ -1,1 +1,12 @@
 
+.advertisement {
+  height: 30vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  border-bottom: 1px solid black;
+}
+
+.milk-ad {
+  height: 100%;;
+}
