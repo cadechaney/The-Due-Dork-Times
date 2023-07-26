@@ -24,7 +24,7 @@ class App extends Component {
     return (
       <>
         <Routes>
-          <Route path='/:id' element={<ArticleDetails />} />
+          <Route path='/article/:id' element={<ArticleDetails />} />
           <Route path='/' element={<ArticlesList articles={this.state.articles} viewArticle={this.viewArticle} />}/>
         </Routes>
       </>
