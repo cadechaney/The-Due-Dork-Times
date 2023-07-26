@@ -10,7 +10,7 @@ function Article({ date, headline, description, image }) {
       <p>date: {newDate[0]} </p>
       <p>Title: {headline}</p>
       <p>description {description}</p>
-      {/* <img src={image}></img> */}
+      <img src={image} className='article-image'></img>
     </>
   )
 }
