@@ -13,12 +13,19 @@ class App extends Component {
     this.state = {
       articles: MockData.articles,
       singleArticle: {},
-      searchResult: ''
+      searchResult: []
     }
   }
 
   viewArticle = (id) => {
     const findArticle = this.state.articles.find((article, index) => index + 1 === id)
+    this.setState({ singleArticle: findArticle }, () => {
+      console.log(this.state.singleArticle)
+    })
+  }
+
+  viewSearchArticle = (id) => {
+    const findArticle = this.state.searchResult.find((article, index) => index + 1 === id)
     this.setState({ singleArticle: findArticle }, () => {
       console.log(this.state.singleArticle)
     })
@@ -37,7 +44,15 @@ class App extends Component {
       <>
         <Routes>
           <Route path='/article/:id' element={<ArticleDetails details={this.state.singleArticle} />} />
-          <Route path='/' element={<ArticlesList articles={this.state.articles} viewArticle={this.viewArticle} searchResult={this.searchResult} />}/>
+          <Route 
+            path='/' 
+            element={<ArticlesList 
+            articles={this.state.articles} 
+            viewArticle={this.viewArticle} 
+            searchResult={this.searchResult}
+            searchResultState={this.state.searchResult}
+            viewSearchArticle={this.viewSearchArticle}
+          />}/>
         </Routes>
       </>
     );
