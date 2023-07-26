@@ -3,6 +3,7 @@ import { Route, Routes } from 'react-router-dom'
 import './App.css';
 import ArticlesList from './ArticlesList/ArticlesList'
 import ArticleDetails from '../ArticleDetails/ArticleDetails';
+// import apiCall from '../../apiCalls/apiCalls';
 
 import MockData from '../../MockData/mockData.json'
 
@@ -16,6 +17,18 @@ class App extends Component {
       searchResult: []
     }
   }
+
+  // componentDidMount() {
+  //   apiCall()
+  //     .then(data => {
+  //       this.setState({
+  //         articles: data.articles
+  //       })
+  //     })
+  //     .catch(error => {
+  //       console.log('error', error)
+  //     })
+  // }
 
   viewArticle = (id) => {
     const findArticle = this.state.articles.find((article, index) => index + 1 === id)
