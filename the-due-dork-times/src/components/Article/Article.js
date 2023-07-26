@@ -7,9 +7,11 @@ function Article({ date, headline, description, image }) {
   
   return(
     <div className='article-container'>
-      <p>date: {newDate[0]} </p>
-      <p>Title: {headline}</p>
-      <p>description {description}</p>
+      <section className='article-details'>
+        <p>{newDate[0]} </p>
+        <h3>{headline}</h3>
+        <p className='article-description'>{description}</p>
+      </section>
       <img src={image} className='article-image'></img>
     </div>
   )
