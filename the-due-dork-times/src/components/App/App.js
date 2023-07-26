@@ -11,16 +11,15 @@ class App extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      articles: [MockData]
+      articles: MockData.articles
     }
   }
 
   render() {
-    console.log(this.state.articles[0].articles)
     return (
       <>
         <Header />
-        <ArticlesList />
+        <ArticlesList articles={this.state.articles} />
       </>
     );
   }
