@@ -5,6 +5,7 @@ import backArrow from '../../assets/backarrowIcon.png'
 
 function ArticleDetails({ details }) {
 
+  const newDate = details.publishedAt.split('T')
   const articleURL = details.url
 
   return (
@@ -15,7 +16,7 @@ function ArticleDetails({ details }) {
             <img src={backArrow} className='back-arrow-icon'></img>
           </NavLink>
           <div className='author-date'>
-            <p>{details.publishedAt}</p>
+            <p>Published on: {newDate[0]}</p>
             <p>{details.author}</p>
           </div>
         </section>
