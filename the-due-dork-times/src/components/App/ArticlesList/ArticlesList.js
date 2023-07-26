@@ -21,7 +21,14 @@ function ArticlesList({ articles, viewArticle, searchResult, searchResultState, 
         <div className='articles-list-container'>
           {articlesList}
         </div>
-        <div className='searched-articles-container'>{searchedArticles}</div>
+        <div className='searched-articles-container'>
+        <p>Search Results:</p>
+        {searchResultState.length === 0 ? (
+          <p>No search results found.</p>
+        ) : (
+          searchedArticles
+        )}
+        </div>
       </section>
     </>
    
