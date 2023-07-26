@@ -1,5 +1,6 @@
 import React from 'react'
 import './ArticleDetails.css'
+import backArrow from '../../assets/backarrowIcon.png'
 
 function ArticleDetails({ details }) {
 
@@ -9,7 +10,7 @@ function ArticleDetails({ details }) {
     <div className='main-details-container'>
       <div className='details-box-container'>
         <section className='article-date-author'>
-          <p>Back</p>
+          <img src={backArrow} className='back-arrow-icon'></img>
           <div className='author-date'>
             <p>{details.publishedAt}</p>
             <p>{details.author}</p>

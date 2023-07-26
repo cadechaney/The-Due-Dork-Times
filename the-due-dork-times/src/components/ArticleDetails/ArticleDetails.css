@@ -23,6 +23,10 @@
   align-items: center;
 }
 
+.back-arrow-icon {
+  height: 50%;
+}
+
 .article-extra-details {
   border-top: 2px solid gray;
   height: 25%;
