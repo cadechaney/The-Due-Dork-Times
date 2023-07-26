@@ -1,4 +1,9 @@
 
+.article-link {
+  text-decoration: none;
+  color: black;
+}
+
 .article-container {
   border-bottom: solid 2px gray;;
   display: flex;
