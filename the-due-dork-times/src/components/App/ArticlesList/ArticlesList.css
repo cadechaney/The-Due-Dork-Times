@@ -1,0 +1,10 @@
+
+.true-articles-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.articles-list-container {
+  width: 50%;
+}
