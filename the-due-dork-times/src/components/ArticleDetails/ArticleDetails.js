@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 import './ArticleDetails.css'
 import backArrow from '../../assets/backarrowIcon.png'
 
@@ -10,7 +11,9 @@ function ArticleDetails({ details }) {
     <div className='main-details-container'>
       <div className='details-box-container'>
         <section className='article-date-author'>
-          <img src={backArrow} className='back-arrow-icon'></img>
+          <NavLink to='/' className='single-article-link'>
+            <img src={backArrow} className='back-arrow-icon'></img>
+          </NavLink>
           <div className='author-date'>
             <p>{details.publishedAt}</p>
             <p>{details.author}</p>

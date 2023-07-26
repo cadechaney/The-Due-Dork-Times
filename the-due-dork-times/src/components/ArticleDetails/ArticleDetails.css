@@ -23,6 +23,12 @@
   align-items: center;
 }
 
+.single-article-link {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
 .back-arrow-icon {
   height: 50%;
 }
