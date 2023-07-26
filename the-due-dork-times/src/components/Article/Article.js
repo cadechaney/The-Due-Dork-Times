@@ -6,12 +6,12 @@ function Article({ date, headline, description, image }) {
   const newDate = date.split('T')
   
   return(
-    <>
+    <div className='article-container'>
       <p>date: {newDate[0]} </p>
       <p>Title: {headline}</p>
       <p>description {description}</p>
       <img src={image} className='article-image'></img>
-    </>
+    </div>
   )
 }
 

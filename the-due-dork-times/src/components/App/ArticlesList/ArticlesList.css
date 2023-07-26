@@ -1,3 +1,10 @@
+
+.true-articles-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
 .articles-list-container {
-  border: 2px solid blue;
+  width: 40%;
 }

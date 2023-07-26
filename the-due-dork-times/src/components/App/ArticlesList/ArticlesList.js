@@ -11,9 +11,11 @@ function ArticlesList({ articles }) {
   ))
 
   return(
+    <section className='true-articles-container'>
       <div className='articles-list-container'>
         {articlesList}
       </div>
+    </section>
    
   )
 }
