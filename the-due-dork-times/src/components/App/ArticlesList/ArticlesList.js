@@ -4,7 +4,7 @@ import Header from '../Header/Header'
 import Article from '../../Article/Article'
 
 
-function ArticlesList({ articles, viewArticle }) {
+function ArticlesList({ articles, viewArticle, searchResult }) {
 
   console.log('articleList', articles)
 
@@ -14,7 +14,7 @@ function ArticlesList({ articles, viewArticle }) {
 
   return(
     <>
-      <Header />
+      <Header searchResult={searchResult} />
       <section className='true-articles-container'>
         <div className='articles-list-container'>
           {articlesList}

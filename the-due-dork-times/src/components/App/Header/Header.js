@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import './Header.css'
 import searchIcon from '../../../assets/searchIcon.png'
 
-function Header() {
+function Header({ searchResult }) {
 
   const [query, setQuery] = useState('')
   const handleSubmit = (query, event) => {
@@ -18,13 +18,14 @@ function Header() {
   return(
     <header>
       <section className='search-section'>
-        <img src={searchIcon} className='search-icon' alt='search icon'></img>
+        <img src={searchIcon} className='search-icon' alt='search icon' onClick={() => searchResult(query)}></img>
         <input 
           type='text' 
           className='search-box'
           placeholder='Search for Articles'
           name='query'
           value={query}
+          onChange={event => setQuery(event.target.value)}
         ></input>
       </section>
       <section className='header-title'>
