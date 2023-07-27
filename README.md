@@ -5,6 +5,8 @@ I wanted to create a news website that was a bazaroo version of The New York Tim
 
 If you would like to reference this from my site, you can visit The New York Times [here](https://www.nytimes.com/)
 
+## Total time worked on Project: 8 Hours
+
 ## Component Data Flow
 <img width="875" alt="Screenshot 2023-07-27 at 9 36 41 AM" src="https://github.com/cadechaney/The-Due-Dork-Times/assets/121843832/71377f48-dba3-4ef8-a3b4-1c56a4599bef">
 
