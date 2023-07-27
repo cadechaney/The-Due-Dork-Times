@@ -1,5 +1,10 @@
 # The-Due-Dork-Times: Smart News for All
 
+## Main idea for the project
+I wanted to create a news website that was a bazaroo version of The New York Times. I even added in my own fake advertisement for a movie that sits above the header
+
+If you would like to reference this from my site, you can visit The New York Times [here](https://www.nytimes.com/)
+
 ## Component Data Flow
 <img width="986" alt="Screenshot_2023-07-26_at_9 27 32_PM" src="https://github.com/cadechaney/The-Due-Dork-Times/assets/121843832/d69584b7-b99b-406d-b169-7e27433b8a2f">
 
@@ -8,5 +13,30 @@
 
 ## Single Article Wire Frame
 <img width="892" alt="Screenshot_2023-07-24_at_5 42 05_PM" src="https://github.com/cadechaney/The-Due-Dork-Times/assets/121843832/7c1eb587-f03f-453f-a2b3-136f54252765">
+
+## Technologies
+1. React
+2. Router
+3. Excalidraw Project Planning
+4. Trello Project Board [here](https://trello.com/b/BYzqRfV5/take-home-challenge-the-due-dork-times)
+5. API from https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=714809d8bf034b16826bde40f32395c0
+
+## Challenges
+The biggest challenge I had during this short project was learning the search functionality. It was my first time making a search by text box instead of a search by drop down, so it was interesting to learn how to grab values from text and search.
+
+## Wins 
+This project was very enjoyable and it allowed me to explore some of my knowledge I have gotten from Turing
+
+## Future Feature Ideas
+1.  Perhaps as a feature I could grab more than one API for articles or advertisements and display them to the user.
+2.  I also could add delete functionality to the search results with a button click, instead currently you have to either refresh the main page or search something else to get different results.
+3.   Add Cypress End to End testing to check for any bugs/errors
+
+## Installation Instructions
+
+-Clone down this repo -Install dependencies by using ‘npm install’ in your terminal within the root directory -To host website on your local machine, run ’npm start’ in terminal -A window should be opened in your default browser, if not, navigate to http://localhost:3000 in your preferred browser to view the hosted application
+
+
+
 
 
