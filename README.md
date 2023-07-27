@@ -6,7 +6,7 @@ I wanted to create a news website that was a bazaroo version of The New York Tim
 If you would like to reference this from my site, you can visit The New York Times [here](https://www.nytimes.com/)
 
 ## Component Data Flow
-<img width="986" alt="Screenshot_2023-07-26_at_9 27 32_PM" src="https://github.com/cadechaney/The-Due-Dork-Times/assets/121843832/d69584b7-b99b-406d-b169-7e27433b8a2f">
+<img width="875" alt="Screenshot 2023-07-27 at 9 36 41 AM" src="https://github.com/cadechaney/The-Due-Dork-Times/assets/121843832/71377f48-dba3-4ef8-a3b4-1c56a4599bef">
 
 ## Main Page Wire Frame
 <img width="751" alt="Screenshot_2023-07-24_at_5 34 38_PM" src="https://github.com/cadechaney/The-Due-Dork-Times/assets/121843832/704c7779-4c3c-4871-bd36-3620427ae4b1">
