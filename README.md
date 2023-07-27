@@ -32,8 +32,10 @@ This project was very enjoyable and it allowed me to explore some of my knowledg
 2.  I also could add delete functionality to the search results with a button click, instead currently you have to either refresh the main page or search something else to get different results.
 3.   Add Cypress End to End testing to check for any bugs/errors
 
-## Installation Instructions
+## Preview of the Website
+![ezgif-5-ad7253d87e](https://github.com/cadechaney/The-Due-Dork-Times/assets/121843832/fa488c44-527c-417b-8e61-52b3fa81f15c)
 
+## Installation Instructions
 -Clone down this repo -Install dependencies by using ‘npm install’ in your terminal within the root directory -To host website on your local machine, run ’npm start’ in terminal -A window should be opened in your default browser, if not, navigate to http://localhost:3000 in your preferred browser to view the hosted application
 
 
