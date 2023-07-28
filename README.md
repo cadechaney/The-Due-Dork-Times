@@ -16,12 +16,20 @@ If you would like to reference this from my site, you can visit The New York Tim
 ## Single Article Wire Frame
 <img width="892" alt="Screenshot_2023-07-24_at_5 42 05_PM" src="https://github.com/cadechaney/The-Due-Dork-Times/assets/121843832/7c1eb587-f03f-453f-a2b3-136f54252765">
 
+## Resources
+1. [Trello](https://trello.com/b/BYzqRfV5/take-home-challenge-the-due-dork-times) for project board
+2. [Excalidraw](https://excalidraw.com/) for wireframes
+3. [React Docs](https://react.dev/)
+4. [React Router](https://reactrouter.com/en/main/start/tutorial)
+5. [Cypress](https://www.cypress.io/)
+
 ## Technologies
 1. React
 2. Router
 3. Excalidraw Project Planning
 4. Trello Project Board [here](https://trello.com/b/BYzqRfV5/take-home-challenge-the-due-dork-times)
 5. API from https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=714809d8bf034b16826bde40f32395c0
+
 
 ## Challenges
 The biggest challenge I had during this short project was learning the search functionality. It was my first time making a search by text box instead of a search by drop down, so it was interesting to learn how to grab values from text and search.
@@ -35,10 +43,14 @@ This project was very enjoyable and it allowed me to explore some of my knowledg
 3.   Add Cypress End to End testing to check for any bugs/errors
 
 ## Preview of the Website
-![ezgif-5-ad7253d87e](https://github.com/cadechaney/The-Due-Dork-Times/assets/121843832/fa488c44-527c-417b-8e61-52b3fa81f15c)
+![ezgif-3-b8ffd55d74](https://github.com/cadechaney/The-Due-Dork-Times/assets/121843832/2027f484-f65e-48ef-b57d-4c1319eacd1b)
 
 ## Installation Instructions
 -Clone down this repo -Install dependencies by using ‘npm install’ in your terminal within the root directory -To host website on your local machine, run ’npm start’ in terminal -A window should be opened in your default browser, if not, navigate to http://localhost:3000 in your preferred browser to view the hosted application
+
+## Testing
+For testing this application I use Cypress, which a End to End framework
+Link to Docs [Here](https://www.cypress.io/)
 
 
 
