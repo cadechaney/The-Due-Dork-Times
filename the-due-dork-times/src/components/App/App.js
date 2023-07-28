@@ -4,31 +4,31 @@ import './App.css';
 import ArticlesList from './ArticlesList/ArticlesList'
 import ArticleDetails from '../ArticleDetails/ArticleDetails';
 import MilkMovie from '../../assets/milkMovieAd.gif'
-import apiCall from '../../apiCalls/apiCalls';
+// import apiCall from '../../apiCalls/apiCalls';
 
-// import MockData from '../../MockData/mockData.json'
+import MockData from '../../MockData/mockData.json'
 
 class App extends Component {
 
   constructor(props) {
     super(props)
     this.state = {
-      articles: [],
+      articles: MockData.articles,
       singleArticle: {},
       searchResult: [],
       err: ''
     }
   }
 
-  componentDidMount() {
-    apiCall()
-      .then(data => {
-        this.setState({
-          articles: data.articles
-        })
-      })
-      .catch(() => {this.setState({err: 'Refresh Page'})})
-  }
+  // componentDidMount() {
+  //   apiCall()
+  //     .then(data => {
+  //       this.setState({
+  //         articles: data.articles
+  //       })
+  //     })
+  //     .catch(() => {this.setState({err: 'Refresh Page'})})
+  // }
 
   viewArticle = (id) => {
     const findArticle = this.state.articles.find((article, index) => index + 1 === id)
