@@ -37,7 +37,6 @@ This project was very enjoyable and it allowed me to explore some of my knowledg
 ## Future Feature Ideas
 1.  Perhaps as a feature I could grab more than one API for articles or advertisements and display them to the user.
 2.  I also could add delete functionality to the search results with a button click, instead currently you have to either refresh the main page or search something else to get different results.
-3.   Add Cypress End to End testing to check for any bugs/errors
 
 ## Preview of the Website
 ![ezgif-3-b8ffd55d74](https://github.com/cadechaney/The-Due-Dork-Times/assets/121843832/2027f484-f65e-48ef-b57d-4c1319eacd1b)
