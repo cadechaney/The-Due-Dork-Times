@@ -4,31 +4,31 @@ import './App.css';
 import ArticlesList from './ArticlesList/ArticlesList'
 import ArticleDetails from '../ArticleDetails/ArticleDetails';
 import MilkMovie from '../../assets/milkMovieAd.gif'
-// import apiCall from '../../apiCalls/apiCalls';
+import apiCall from '../../apiCalls/apiCalls';
 
-import MockData from '../../MockData/mockData.json'
+// import MockData from '../../MockData/mockData.json'
 
 class App extends Component {
 
   constructor(props) {
     super(props)
     this.state = {
-      articles: MockData.articles,
+      articles: [],
       singleArticle: {},
       searchResult: [],
       err: ''
     }
   }
 
-  // componentDidMount() {
-  //   apiCall()
-  //     .then(data => {
-  //       this.setState({
-  //         articles: data.articles
-  //       })
-  //     })
-  //     .catch(() => {this.setState({err: 'Refresh Page'})})
-  // }
+  componentDidMount() {
+    apiCall()
+      .then(data => {
+        this.setState({
+          articles: data.articles
+        })
+      })
+      .catch(() => {this.setState({err: 'Refresh Page'})})
+  }
 
   viewArticle = (id) => {
     const findArticle = this.state.articles.find((article, index) => index + 1 === id)
@@ -45,6 +45,12 @@ class App extends Component {
   }
 
   searchResult = (searchResult) => {
+
+    if(!searchResult) {
+      console.log("Error, search is empty")
+      return;
+    }
+
     let lowerCaseValue = searchResult.toLowerCase()
     let searchArticleResult = this.state.articles.filter((article) => article.author.toLowerCase().includes(lowerCaseValue) || article.title.toLowerCase().includes(lowerCaseValue))
     this.setState({ searchResult: searchArticleResult}, () => {
@@ -59,10 +65,10 @@ class App extends Component {
 
     return (
       <>
-      <div className='advertisement'>
-        <p>advertisement</p>
-        <img src={MilkMovie} className='milk-ad'></img>
-      </div>
+        <div className='advertisement'>
+          <p>advertisement</p>
+          <img src={MilkMovie} className='milk-ad'></img>
+        </div>
         <Routes>
           <Route path='/article/:id' element={<ArticleDetails details={this.state.singleArticle} />} />
           <Route 
