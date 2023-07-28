@@ -22,8 +22,7 @@ function ArticlesList({ articles, viewArticle, searchResult, searchResultState, 
           {searchResultState.length === 0 ? (
             articlesList
           ) : (
-            <div className='searched-articles-container'>
-              <p>Search Results:</p>
+            <div className='search-articles-container'>
               {searchedArticles.length === 0 ? (
                 <p>No search results found.</p>
               ) : (
