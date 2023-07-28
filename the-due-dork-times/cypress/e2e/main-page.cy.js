@@ -33,5 +33,22 @@ describe('template spec', () => {
     cy.get('.search-box').should('be.visible')
   })
 
-  
+  it('should be able to search an article', () => {
+    cy.get('.search-box').type('Sarah').get('.search-icon').click()
+    cy.get('.search-article-container').should('exist')
+    cy.get('.search-article-container').should('be.visible')
+  })
+
+  it('should be able to take user to single article page', () => {
+    cy.get('.article-container').first().click()
+    cy.get('.author-date').should('be.visible')
+    cy.get('.title-url').should('be.visible')
+    cy.get('.article-description-long').should('be.visible')
+  })
+
+  it('should be able to bring the user back to the main page', () => {
+    cy.get('.article-container').first().click()
+    cy.get('.back-arrow-icon').click()
+    cy.get('h1').contains('The Due Dork Times: Smart News for All')
+  })
 })
