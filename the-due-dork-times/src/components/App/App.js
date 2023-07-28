@@ -45,6 +45,12 @@ class App extends Component {
   }
 
   searchResult = (searchResult) => {
+
+    if(!searchResult) {
+      console.log("Error, search is empty")
+      return;
+    }
+
     let lowerCaseValue = searchResult.toLowerCase()
     let searchArticleResult = this.state.articles.filter((article) => article.author.toLowerCase().includes(lowerCaseValue) || article.title.toLowerCase().includes(lowerCaseValue))
     this.setState({ searchResult: searchArticleResult}, () => {
@@ -59,10 +65,10 @@ class App extends Component {
 
     return (
       <>
-      <div className='advertisement'>
-        <p>advertisement</p>
-        <img src={MilkMovie} className='milk-ad'></img>
-      </div>
+        <div className='advertisement'>
+          <p>advertisement</p>
+          <img src={MilkMovie} className='milk-ad'></img>
+        </div>
         <Routes>
           <Route path='/article/:id' element={<ArticleDetails details={this.state.singleArticle} />} />
           <Route 

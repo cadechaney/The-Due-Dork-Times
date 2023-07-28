@@ -7,7 +7,7 @@
   border-bottom: solid 2px gray;;
   display: flex;
   margin-top: 5%;
-  margin-left: 5%;
+  /* margin-left: 5%; */
 }
 
 .search-article-details {
@@ -20,12 +20,14 @@
 
 .search-article-image {
   height: 100%;
-  width: 30%;
+  width: 60%;
   margin-bottom: 4%;
 }
 
-@media screen and (max-width: 700px) {
-  .search-article-image {
-    display: none;
+@media screen and (max-width: 480px) {
+  .article-image {
+    
+    width: 40%;
+    margin-bottom: 2%;
   }
 }

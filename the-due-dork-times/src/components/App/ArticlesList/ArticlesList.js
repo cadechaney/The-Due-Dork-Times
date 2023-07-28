@@ -19,15 +19,17 @@ function ArticlesList({ articles, viewArticle, searchResult, searchResultState, 
       <Header searchResult={searchResult} />
       <section className='true-articles-container'>
         <div className='articles-list-container'>
-          {articlesList}
-        </div>
-        <div className='searched-articles-container'>
-        <p>Search Results:</p>
-        {searchResultState.length === 0 ? (
-          <p>No search results found.</p>
-        ) : (
-          searchedArticles
-        )}
+          {searchResultState.length === 0 ? (
+            articlesList
+          ) : (
+          <div className='search-articles-container'>
+            {searchedArticles.length === 0 ? (
+              <p>No search results found.</p>
+            ) : (
+              searchedArticles
+            )}
+          </div>
+          )}
         </div>
       </section>
     </>
