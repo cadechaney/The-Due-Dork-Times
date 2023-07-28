@@ -17,4 +17,21 @@ describe('template spec', () => {
     cy.get('.article-container').first()
     cy.get('.article-container').last()
   })
+
+  it('should have correct info inside of articles', () => {
+    cy.get('.article-description').first().should('be.visible')
+    cy.get('.article-description').last().should('be.visible')
+  })
+
+  it('should have an advertisement', () => {
+    cy.get('.advertisement').should('exist')
+    cy.get('.milk-ad').should('be.visible')
+  })
+
+  it('should have a search icon and bar', () => {
+    cy.get('.search-icon').should('be.visible')
+    cy.get('.search-box').should('be.visible')
+  })
+
+  
 })
