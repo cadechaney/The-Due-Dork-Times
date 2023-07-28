@@ -26,10 +26,7 @@ If you would like to reference this from my site, you can visit The New York Tim
 ## Technologies
 1. React
 2. Router
-3. Excalidraw Project Planning
-4. Trello Project Board [here](https://trello.com/b/BYzqRfV5/take-home-challenge-the-due-dork-times)
-5. API from https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=714809d8bf034b16826bde40f32395c0
-
+3. API from https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=714809d8bf034b16826bde40f32395c0
 
 ## Challenges
 The biggest challenge I had during this short project was learning the search functionality. It was my first time making a search by text box instead of a search by drop down, so it was interesting to learn how to grab values from text and search.
@@ -49,7 +46,7 @@ This project was very enjoyable and it allowed me to explore some of my knowledg
 -Clone down this repo -Install dependencies by using ‘npm install’ in your terminal within the root directory -To host website on your local machine, run ’npm start’ in terminal -A window should be opened in your default browser, if not, navigate to http://localhost:3000 in your preferred browser to view the hosted application
 
 ## Testing
-For testing this application I use Cypress, which is an End to End framework
+For testing this application I used Cypress, which is an End to End framework
 Link to Docs [Here](https://www.cypress.io/)
 
 
