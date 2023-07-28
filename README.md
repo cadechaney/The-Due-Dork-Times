@@ -49,7 +49,7 @@ This project was very enjoyable and it allowed me to explore some of my knowledg
 -Clone down this repo -Install dependencies by using ‘npm install’ in your terminal within the root directory -To host website on your local machine, run ’npm start’ in terminal -A window should be opened in your default browser, if not, navigate to http://localhost:3000 in your preferred browser to view the hosted application
 
 ## Testing
-For testing this application I use Cypress, which a End to End framework
+For testing this application I use Cypress, which is an End to End framework
 Link to Docs [Here](https://www.cypress.io/)
 
 
